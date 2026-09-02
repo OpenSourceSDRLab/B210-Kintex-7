@@ -1,0 +1,2 @@
+Replace all files with the same name on the computer using the folder usrpub210_fpga.bin;
+If you cannot find the directory to replace the file, you can run uhd_usrp-probe to check the location of the image file. The same applies to other software, simply replace the bin file
