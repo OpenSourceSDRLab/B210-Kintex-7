@@ -1,0 +1,12 @@
+# Vivado generated files (only the .xpr and sources are kept in the repository)
+*.cache/
+*.gen/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.jou
+*.log
+*.str
+.Xil/
+.DS_Store
