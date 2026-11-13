@@ -115,6 +115,17 @@ Differences in use compared with the original USRP B210:
 
 ## 6. First signals
 
+Each channel has two SMA ports. In UHD-based software, the channel is chosen with the subdevice (`subdev`) and the port with the antenna setting:
+
+| Board port | Subdevice | Antenna |
+|---|---|---|
+| TRX1 | `A:A` | `TX/RX` |
+| RX1 | `A:A` | `RX2` |
+| TRX2 | `A:B` | `TX/RX` |
+| RX2 | `A:B` | `RX2` |
+
+For example, the Gqrx device string for the RX2 port is `uhd,type=b200,subdev=A:B` with the antenna set to `RX2`.
+
 Once `uhd_usrp_probe` passes, any UHD-based application can use the board: GNU Radio, SDRangel, Gqrx, Universal Radio Hacker and others. Two GNU Radio Companion examples are in `examples/gnuradio/` of the repository: a two-channel receiver and a TX-to-RX loop-back test.
 
 Step-by-step instructions for these applications are in the user manual on our blog: <https://blog.opensourcesdrlab.com/archives/kintex-7-usrp-b210-user-manual>
